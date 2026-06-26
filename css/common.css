@@ -1,45 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Playfair+Display:wght@400;600;700&display=swap");
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  max-width: 1200px;
+    max-width: 1200px;
 }
 
 :root {
-  --font-heading: "Playfair Display", serif;
-  --font-body: "Lora", serif;
+    --font-heading: "Playfair Display", serif;
+    --font-body: "Lora", serif;
 
-  --bg: #f5f0e8;
-  --bg-surface: #ede7dc;
-  --bg-hover: #e5ddd0;
+    --bg: #f5f0e8;
+    --bg-surface: #ede7dc;
+    --bg-hover: #e5ddd0;
 
-  --fg: #2c2420;
-  --fg-muted: #7d7169;
-  --fg-light: #a89a8e;
+    --fg: #2c2420;
+    --fg-muted: #7d7169;
+    --fg-light: #a89a8e;
 
-  --success: #5b8c5a;
-  --info: #5b7fa5;
-  --danger: #b84a42;
+    --success: #5b8c5a;
+    --info: #5b7fa5;
+    --danger: #b84a42;
 
-  --border: #d4c9b8;
-  --border-light: #e2d9cb;
+    --border: #d4c9b8;
+    --border-light: #e2d9cb;
 
-  --accent: #d4a24e;
-  --accent-light: #e2bc76;
-  --accent-dark: #b8892e;
+    --accent: #d4a24e;
+    --accent-light: #e2bc76;
+    --accent-dark: #b8892e;
 
-  --radius-sm: 4px;
-  --radius-md: 8px;
-  --radius-lg: 12px;
-  --radius-xl: 16px;
-  --radius-full: 9999px;
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-xl: 16px;
+    --radius-full: 9999px;
 
-  --shadow-sm: 0 1px 3px #2c242014;
-  --shadow-md: 0 4px 6px #2c24201a;
-  --shadow-lg: 0 10px 25px #2c24201f;
+    --shadow-sm: 0 1px 3px #2c242014;
+    --shadow-md: 0 4px 6px #2c24201a;
+    --shadow-lg: 0 10px 25px #2c24201f;
 }
