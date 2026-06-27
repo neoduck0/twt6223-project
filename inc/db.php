@@ -1,4 +1,7 @@
 <?php
+
+declare(strict_types=1);
+
 $db_server = "localhost";
 $db_user = "root";
 $db_pass = "";
