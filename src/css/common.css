@@ -29,6 +29,9 @@
     --accent-ink-strong: #3d2c10;
     --accent-border: #be903b;
 
+    --success: #5b8c5a;
+    --danger: #b84a42;
+
     --success-bg: #deebdd;
     --success-fg: #2d5e2d;
 
@@ -73,4 +76,12 @@ h6 {
 
 a {
     text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: not-allowed;
 }

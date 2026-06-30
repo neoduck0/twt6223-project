@@ -1,0 +1,122 @@
+.login-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 16px;
+    color: var(--fg);
+}
+
+.login-shell {
+    width: 100%;
+    max-width: 440px;
+}
+
+.login-card {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
+    padding: 32px;
+}
+
+.login-card h1 {
+    color: var(--fg-emphasis);
+    font-size: 30px;
+    margin-bottom: 6px;
+}
+
+.login-subtitle {
+    color: var(--fg-muted);
+    margin-bottom: 24px;
+}
+
+.login-error {
+    background: var(--danger-bg);
+    border: 1px solid var(--danger-fg);
+    border-radius: var(--radius-md);
+    color: var(--danger-fg);
+    margin-bottom: 16px;
+    padding: 11px 13px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.login-label {
+    color: var(--fg-emphasis);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.login-form input {
+    background: var(--bg-field);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    color: var(--fg);
+    font: inherit;
+    min-height: 42px;
+    padding: 10px 12px;
+}
+
+.login-form input::placeholder {
+    color: var(--fg-subtle);
+}
+
+.login-form input:focus-visible {
+    outline-color: var(--accent);
+}
+
+.login-form button {
+    background: var(--accent);
+    border: 1px solid var(--accent-border);
+    border-radius: var(--radius-md);
+    color: var(--accent-ink);
+    font: inherit;
+    font-weight: 700;
+    margin-top: 8px;
+    min-height: 43px;
+}
+
+.login-form button:hover {
+    filter: brightness(105%);
+    box-shadow: var(--shadow-sm);
+}
+
+.login-form button:active:not(:disabled) {
+    transform: translateY(1px);
+}
+
+.login-form button:disabled {
+    opacity: 0.8;
+}
+
+.login-footer {
+    color: var(--fg-muted);
+    margin-top: 18px;
+    text-align: center;
+}
+
+.login-footer a {
+    color: var(--fg-emphasis);
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+    text-underline-offset: 2px;
+}
+
+.login-footer a:hover {
+    color: var(--accent-dark);
+}
+
+@media (max-width: 480px) {
+    .login-card {
+        padding: 22px;
+    }
+
+    .login-card h1 {
+        font-size: 26px;
+    }
+}

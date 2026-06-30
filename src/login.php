@@ -67,16 +67,36 @@ render_page:
         <link rel="stylesheet" href="css/common.css">
         <link rel="stylesheet" href="css/login.css">
     </head>
-    <body>
-        <?php if (isset($error) && $error !== null): ?>
-        <p><?= htmlspecialchars($error) ?></p>
-        <?php endif; ?>
-        <form method="post">
-            <input type="hidden" name="csrf_token" value="<?= generate_csrf_token() ?>">
-            <input placeholder="Email" type="email" name="email">
-            <input placeholder="Password" type="password" name="password">
-            <button type="submit">Login</button>
-        </form>
-        <a href="register.php">Register</a>
+    <body class="login-page">
+        <main class="login-shell">
+            <section class="login-card">
+                <h1 id="login-heading">Welcome back</h1>
+                <p class="login-subtitle">Log in to continue to Etagere.</p>
+
+                <?php if (isset($error) && $error !== null): ?>
+                <p class="login-error" role="alert">
+                    <?= htmlspecialchars($error) ?>
+                </p>
+                <?php endif; ?>
+
+                <form method="post" class="login-form">
+                    <input type="hidden" name="csrf_token" value="<?= generate_csrf_token() ?>">
+
+                    <label class="login-label" for="email">Email</label>
+                    <input id="email" placeholder="Enter your email" type="email" name="email" required>
+
+                    <label class="login-label" for="password">Password</label>
+                    <input id="password" placeholder="Enter your password" type="password" name="password" required>
+
+                    <button type="submit">Log in</button>
+                </form>
+
+                <p class="login-footer">
+                    New here? <a href="register.php">Create an account</a>
+                </p>
+            </section>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@4.0.0/dist/jquery.min.js"></script>
+        <script src="js/login.js"></script>
     </body>
 </html>
